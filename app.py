@@ -11,7 +11,7 @@ img_size = (224, 224)
 @st.cache_resource
 def load_model():
     # Adjust the path if your model file is in a different location
-    model_path = 'v5/texture_model.keras'
+    model_path = 'texture_model.keras'
     if not os.path.exists(model_path):
         st.error(f"Model file not found at {model_path}")
         return None
