@@ -1,0 +1,12 @@
+Dataset:
+- 100 Gambar di masing-masing class
+- 240 Training, 60 Validation
+
+Code:
+- Penambahan regularisasi L2 untuk mengurangi overfitting
+
+Hasil Prediksi:
+- 8/8 ━━━━━━━━━━━━━━━━━━━━ 17s 2s/step - accuracy: 0.9929 - loss: 0.0532 - val_accuracy: 0.9333 - val_loss: 1.4012
+
+Catatan:
+- 

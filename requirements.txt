@@ -1,0 +1,7 @@
+tensorflow
+keras_tuner
+streamlit
+matplotlib
+Pillow
+numpy
+pandas

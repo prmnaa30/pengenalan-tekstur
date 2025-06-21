@@ -1,0 +1,28 @@
+Dataset:
+- 100 Gambar di masing-masing class
+- 240 Training, 60 Validation
+
+Code:
+- Mengurangi augmentasi karena sudah dilakukan saat mengumpulkan gambar untuk dataset.
+- Perbaikan di hypertuner
+- Tambahan pada aplikasi streamlit untuk menghandle prediksi gambar diluar main class (kayu, batu dan kain)
+  menggunakan Out-of-Distribution (OOD)
+
+Hasil Training Terakhir:
+Epoch 1/7
+8/8 ━━━━━━━━━━━━━━━━━━━━ 16s 2s/step - accuracy: 0.4776 - loss: 1.0556 - val_accuracy: 0.9833 - val_loss: 0.1534
+Epoch 2/7
+8/8 ━━━━━━━━━━━━━━━━━━━━ 10s 1s/step - accuracy: 0.9198 - loss: 0.2181 - val_accuracy: 0.9667 - val_loss: 0.1021
+Epoch 3/7
+8/8 ━━━━━━━━━━━━━━━━━━━━ 10s 1s/step - accuracy: 0.9687 - loss: 0.1067 - val_accuracy: 1.0000 - val_loss: 0.0530
+Epoch 4/7
+8/8 ━━━━━━━━━━━━━━━━━━━━ 10s 1s/step - accuracy: 0.9660 - loss: 0.0913 - val_accuracy: 1.0000 - val_loss: 0.0326
+Epoch 5/7
+8/8 ━━━━━━━━━━━━━━━━━━━━ 10s 1s/step - accuracy: 0.9799 - loss: 0.0957 - val_accuracy: 1.0000 - val_loss: 0.0163
+Epoch 6/7
+8/8 ━━━━━━━━━━━━━━━━━━━━ 10s 1s/step - accuracy: 0.9684 - loss: 0.0820 - val_accuracy: 1.0000 - val_loss: 0.0152
+Epoch 7/7
+8/8 ━━━━━━━━━━━━━━━━━━━━ 10s 1s/step - accuracy: 0.9754 - loss: 0.0424 - val_accuracy: 1.0000 - val_loss: 0.0150
+
+Catatan:
+- 

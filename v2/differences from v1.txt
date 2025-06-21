@@ -1,0 +1,11 @@
+Dataset:
+- Jumlahnya masih sama, 63 picture
+
+Code:
+- Tidak ada perbedaan
+
+Hasil Prediksi:
+- Dari yang sebelumnya 92.38% menjadi 100%
+
+Catatan:
+- Dataset bisa dikembangkan lagi untuk jumlah gambarnya
