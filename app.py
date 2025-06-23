@@ -20,7 +20,7 @@ st.write(
 # --- Variabel Global ---
 MODEL_PATH = 'texture_model.keras'
 CLASSES = ['batu', 'kain', 'kayu']
-IMG_SIZE = (150, 150)
+IMG_SIZE = (512, 512)
 CONFIDENCE_THRESHOLD = 0.80 # Ambang batas kepercayaan 80%
 
 # --- Fungsi untuk Memuat Model (dengan Caching) ---
