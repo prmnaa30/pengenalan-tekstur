@@ -43,18 +43,20 @@ def preprocess_image(image):
     """Melakukan preprocessing pada gambar sebelum dimasukkan ke model"""
     # 1. Resize gambar
     img = image.resize(IMG_SIZE)
-    # 2. Konversi ke array numpy
+    # 2. Convert gambar ke RGB (Untuk handle PNG)
+    img = img.convert('RGB')
+    # 3. Konversi ke array numpy
     img_array = np.array(img)
-    # 3. Tambahkan dimensi batch
+    # 4. Tambahkan dimensi batch
     img_array = np.expand_dims(img_array, axis=0)
-    # 4. Gunakan fungsi preprocess_input dari EfficientNet
+    # 5. Gunakan fungsi preprocess_input dari EfficientNet
     processed_img = tf.keras.applications.efficientnet.preprocess_input(img_array)
     return processed_img
 
 # --- UI untuk Unggah Gambar ---
 uploaded_file = st.file_uploader(
     "Pilih sebuah gambar...",
-    type=["jpg", "jpeg"]
+    type=["jpg", "jpeg", "png"]
 )
 
 st.markdown("---")
